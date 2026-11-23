@@ -23,6 +23,10 @@
   thead {
     display: table-header-group;
   }
+
+  aside {
+    display: none !important;
+  }
 }
 
 /* Custom scrollbar */
@@ -32,15 +36,26 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #fef2f2;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: #fca5a5;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a1a1a1;
+  background: #f87171;
+}
+
+/* Smooth transitions */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: #fecaca;
+  color: #991b1b;
 }
